@@ -1,5 +1,6 @@
 # TPScan
 
+![下载地址](https://github.com/tangxiaofeng7/TPScan/releases/tag/V1.1)
 
 # V1.1版本
 
