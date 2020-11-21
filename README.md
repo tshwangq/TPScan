@@ -8,5 +8,5 @@
 #### 2.修复某exp无效问题
 
 
-![](https://cdn.jsdelivr.net/gh/tangxiaofeng7/TPScan/blob/main/1.gif?raw=true)
+![](https://github.com/tangxiaofeng7/tangxiaofeng7/TPScan/blob/main/1.gif?raw=true)
 
