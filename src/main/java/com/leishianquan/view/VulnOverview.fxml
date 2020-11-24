@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leishianquan.view.VulnOverviewController">
+   <center>
+      <AnchorPane prefHeight="398.0" prefWidth="1000.0">
+         <children>
+            <JFXButton fx:id="jbtn_strat" layoutX="418.0" layoutY="120.0" onAction="#handlevuln_strat" text="检 测 漏 洞">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="exec_btn" layoutX="418.0" layoutY="178.0" onAction="#handlexec_code" text="执 行 命 令">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="47.0" layoutY="126.0" text="漏 洞：">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="Vulncbx" layoutX="115.0" layoutY="122.0" prefHeight="27.0" prefWidth="249.0" />
+            <Label layoutX="47.0" layoutY="184.0" text="命 令：">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="exec_commond" editable="true" layoutX="115.0" layoutY="180.0" prefHeight="27.0" prefWidth="253.0" />
+            <Label layoutX="47.0" layoutY="69.0" text="地 址：">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="url" alignment="CENTER" layoutX="113.0" layoutY="62.0" prefHeight="34.0" prefWidth="246.0" text="http://127.0.0.1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="bothjbtn_strat" layoutX="418.0" layoutY="64.0" onAction="#bothvuln_code" text="批 量 检 测">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="clear" layoutX="538.0" layoutY="179.0" onAction="#clear" text="清 除 记 录">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <BorderPane prefHeight="497.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <center>
+            <JFXTextArea fx:id="result_text" prefHeight="497.0" prefWidth="804.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>
